@@ -1,9 +1,8 @@
 version: "3"
 services:
-  speedtest-x:
-    image: stilleshan/speedtest-x
-    container_name: speedtest-x
+  ror2server-x:
+    image: avivace/ror2server:latest
+    container_name: ror2server
     ports:
-      - 12345:80
+      - 27015:27015/udp
     restart: always
-
